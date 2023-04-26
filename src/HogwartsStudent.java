@@ -4,12 +4,10 @@ public abstract class HogwartsStudent {
     private final int distanceTransgression; // расстояние трансгресии
 
 
-
     public HogwartsStudent(int powerOfMagic, int distanceTransgression) {
 
         this.powerOfMagic = powerOfMagic;
         this.distanceTransgression = distanceTransgression;
-
 
     }
 
@@ -23,11 +21,16 @@ public abstract class HogwartsStudent {
 
     // метод сравнения трансгресии и магии
 
+
+    public void compare(HogwartsStudent) {
+
+    }
+
     private int summ() {
         return powerOfMagic + distanceTransgression;
     }
-
 }
+
 
 //
 
