@@ -97,8 +97,17 @@ public class Main {
                         random.nextInt(1, 100),
                         random.nextInt(1, 100),
                         random.nextInt(1, 100)),
-
         };
+
+        //  HogwartsStuden[] hogwartsStuden = {
+        //          new HogwartsStudent("Harry Potter",
+        //                  random.nextInt(1, 100),
+        //                  random.nextInt(1, 100),
+        //                  random.nextInt(1, 100),
+        //                  new HogwartsStudent("Hermione Granger",
+        //                          random.nextInt(1, 100),
+        //                          random.nextInt(1, 100),
+        //                          random.nextInt(1, 100),
 
 
         PrintService printService = new PrintService();
@@ -115,7 +124,7 @@ public class Main {
         ravenclawStudents[0].compare(ravenclawStudents[2]);
         slytherinStudents[0].compare(slytherinStudents[2]);
 
-
+        HogwartsStudent
     }
 
 
