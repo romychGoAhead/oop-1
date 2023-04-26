@@ -42,4 +42,25 @@ public class SlytherinStudent extends HogwartsStudent {
     public int getLustForPower() {
         return lustForPower;
     }
+
+    public void compare(SlytherinStudent otherStudent) {
+        if (otherStudent.pointSumm() < this.pointSumm()) {
+            System.out.println("сильнее в Slytherin" + this.getName());
+        } else System.out.println("сильнее в Slytherin" + otherStudent.getName());
+    }
+
+
+    private int pointSumm() {
+        return cunning + determination + ambition + resourcefulness;
+    }
+
+    public void summa(GryffindorStudent otherStudent) {
+        if (otherStudent.summ() < this.summ()) {
+            System.out.println("сильнее " + this.getName());
+        } else System.out.println("сильнее " + otherStudent.getName());
+    }
+
+    private int summ() {
+        return powerOfMagic + distanceTransgression;
+    }
 }

@@ -1,5 +1,4 @@
 import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -108,11 +107,21 @@ public class Main {
         printService.print(ravenclawStudents);
         printService.print(slytherinStudents);
 
+        System.out.println();
+
+
+        gryffindorStudents[0].compare(gryffindorStudents[2]);
+        hufflepuffStudents[0].compare(hufflepuffStudents[2]);
+        ravenclawStudents[0].compare(ravenclawStudents[2]);
+        slytherinStudents[0].compare(slytherinStudents[2]);
+
 
     }
 
 
 }
+
+
 
 
 

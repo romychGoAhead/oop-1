@@ -1,3 +1,5 @@
+
+
 public class GryffindorStudent extends HogwartsStudent {
     private final int nobility;     // благородство
     private final int honor;      //честь
@@ -31,18 +33,26 @@ public class GryffindorStudent extends HogwartsStudent {
         return name;
     }
 
-    public void compare("здесь нужно отразить факультет и студента") { // сравнение внутри факультета
 
-        if ("cтудент".pointSumm() < this.pointSumm()) {
-            System.out.println("сильнее " + this.getNane());
-            else if ("cтудент".pointSumm() > this.pointSumm())
-                System.out.println();
-        }
-
+    public void compare(GryffindorStudent otherStudent) {
+        if (otherStudent.pointSumm() < this.pointSumm()) {
+            System.out.println("сильнее в Gryffindor " + this.getName());
+        } else System.out.println("сильнее в Gryffindor " + otherStudent.getName());
     }
 
     private int pointSumm() {
         return nobility + honor + bravery;
     }
+
+    public void summa(GryffindorStudent otherStudent) {
+        if (otherStudent.summ() < this.summ()) {
+            System.out.println("сильнее " + this.getName());
+        } else System.out.println("сильнее " + otherStudent.getName());
+    }
+
+    private int summ() {
+        return powerOfMagic + distanceTransgression;
+    }
+
 }
 

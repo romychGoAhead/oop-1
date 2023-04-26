@@ -29,6 +29,25 @@ public class HufflepuffStudent extends HogwartsStudent {
         return name;
     }
 
+    public void compare(HufflepuffStudent otherStudent) {
+        if (otherStudent.pointSumm() < this.pointSumm()) {
+            System.out.println("сильнее в Hufflepuff" + this.getName());
+        } else System.out.println("сильнее в Hufflepuff" + otherStudent.getName());
+    }
+
+    private int pointSumm() {
+        return industriousness + loyalty + honesty;
+    }
+
+    public void summa(HufflepuffStudent otherStudent) {
+        if (otherStudent.summ() < this.summ()) {
+            System.out.println("сильнее " + this.getName());
+        } else System.out.println("сильнее " + otherStudent.getName());
+    }
+
+    private int summ() {
+        return powerOfMagic + distanceTransgression;
+    }
 
 }
 

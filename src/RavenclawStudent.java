@@ -35,5 +35,25 @@ public class RavenclawStudent extends HogwartsStudent {
     public String getName() {
         return name;
     }
-}
 
+    public void compare(RavenclawStudent otherStudent) {
+        if (otherStudent.pointSumm() < this.pointSumm()) {
+            System.out.println("сильнее в Ravenclaw" + this.getName());
+        } else System.out.println("сильнее в Ravenclaw" + otherStudent.getName());
+    }
+
+
+    private int pointSumm() {
+        return smart + wisdom + wit + creativity;
+    }
+
+    public void summa(RavenclawStudent otherStudent) {
+        if (otherStudent.summ() < this.summ()) {
+            System.out.println("сильнее " + this.getName());
+        } else System.out.println("сильнее " + otherStudent.getName());
+    }
+
+    private int summ() {
+        return powerOfMagic + distanceTransgression;
+    }
+}
