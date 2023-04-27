@@ -125,7 +125,7 @@ public class Main {
         HogwartsStudent slytherinStudent = slytherinStudents[0];
 
         gryffindorStudent.compare(hufflepuffStudent);
-        gryffindorStudent.compare(ravenclawStudent);
+        gryffindorStudent.compare(ravenclawStudent);  // здесь сравниваем студентов м/у факультетами
         gryffindorStudent.compare(slytherinStudents[0]);
 
     }
