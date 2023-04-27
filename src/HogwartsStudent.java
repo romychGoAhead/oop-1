@@ -29,8 +29,8 @@ public class HogwartsStudent {
 
     public void compare(HogwartsStudent otherStudent) {
         if (otherStudent.summ() < this.summ()) {
-            System.out.println("сильнее " + this.getName());
-        } else System.out.println("сильнее в " + otherStudent.getName());
+            System.out.println("сильнее среди студентов " + this.getName());
+        } else System.out.println("сильнее среди студентов " + otherStudent.getName());
     }
 
 
