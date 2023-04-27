@@ -5,13 +5,13 @@ public class SlytherinStudent extends HogwartsStudent {
     private final int ambition;           //амбициозность
     private final int resourcefulness;   // находчивость
     private final int lustForPower;    // жажда власти
-    private final String name;
+
 
     public SlytherinStudent(String name, int cunning,
                             int determination, int ambition, int resourcefulness, int lustForPower,
                             int powerOfMagic, int distanceTransgression) {
-        super(powerOfMagic, distanceTransgression);
-        this.name = name;
+        super(powerOfMagic, distanceTransgression, name);
+
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
@@ -19,9 +19,6 @@ public class SlytherinStudent extends HogwartsStudent {
         this.lustForPower = lustForPower;
     }
 
-    public String getName() {
-        return name;
-    }
 
     public int getCunning() {
         return cunning;
@@ -54,13 +51,5 @@ public class SlytherinStudent extends HogwartsStudent {
         return cunning + determination + ambition + resourcefulness;
     }
 
-    public void summa(GryffindorStudent otherStudent) {
-        if (otherStudent.summ() < this.summ()) {
-            System.out.println("сильнее " + this.getName());
-        } else System.out.println("сильнее " + otherStudent.getName());
-    }
 
-    private int summ() {
-        return powerOfMagic + distanceTransgression;
-    }
 }

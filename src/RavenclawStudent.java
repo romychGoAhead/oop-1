@@ -4,12 +4,12 @@ public class RavenclawStudent extends HogwartsStudent {
     private final int wisdom;   // мудрость
     private final int wit;      // остроумие
     private final int creativity;    // творчество
-    private final String name;
+
 
     public RavenclawStudent(String name, int smart,
                             int wisdom, int wit, int creativity, int powerOfMagic, int distanceTransgression) {
-        super(powerOfMagic, distanceTransgression);
-        this.name = name;
+        super(powerOfMagic, distanceTransgression, name);
+
         this.smart = smart;
         this.wisdom = wisdom;
         this.wit = wit;
@@ -32,9 +32,6 @@ public class RavenclawStudent extends HogwartsStudent {
         return creativity;
     }
 
-    public String getName() {
-        return name;
-    }
 
     public void compare(RavenclawStudent otherStudent) {
         if (otherStudent.pointSumm() < this.pointSumm()) {
@@ -47,13 +44,5 @@ public class RavenclawStudent extends HogwartsStudent {
         return smart + wisdom + wit + creativity;
     }
 
-    public void summa(RavenclawStudent otherStudent) {
-        if (otherStudent.summ() < this.summ()) {
-            System.out.println("сильнее " + this.getName());
-        } else System.out.println("сильнее " + otherStudent.getName());
-    }
 
-    private int summ() {
-        return powerOfMagic + distanceTransgression;
-    }
 }

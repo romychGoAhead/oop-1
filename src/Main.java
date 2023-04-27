@@ -99,15 +99,6 @@ public class Main {
                         random.nextInt(1, 100)),
         };
 
-        //  HogwartsStuden[] hogwartsStuden = {
-        //          new HogwartsStudent("Harry Potter",
-        //                  random.nextInt(1, 100),
-        //                  random.nextInt(1, 100),
-        //                  random.nextInt(1, 100),
-        //                  new HogwartsStudent("Hermione Granger",
-        //                          random.nextInt(1, 100),
-        //                          random.nextInt(1, 100),
-        //                          random.nextInt(1, 100),
 
 
         PrintService printService = new PrintService();
@@ -120,11 +111,23 @@ public class Main {
 
 
         gryffindorStudents[0].compare(gryffindorStudents[2]);
+        gryffindorStudents[0].compare(gryffindorStudents[1]);
         hufflepuffStudents[0].compare(hufflepuffStudents[2]);
+        hufflepuffStudents[0].compare(hufflepuffStudents[1]);
         ravenclawStudents[0].compare(ravenclawStudents[2]);
+        ravenclawStudents[0].compare(ravenclawStudents[1]);
         slytherinStudents[0].compare(slytherinStudents[2]);
+        slytherinStudents[0].compare(slytherinStudents[1]);
+        System.out.println();
+        HogwartsStudent gryffindorStudent = gryffindorStudents[0];  // здесь мы действуем от родительского класса
+        HogwartsStudent hufflepuffStudent = hufflepuffStudents[0]; // ctl b - смотрим на какой метод ссылается
+        HogwartsStudent ravenclawStudent = ravenclawStudents[0];
+        HogwartsStudent slytherinStudent = slytherinStudents[0];
 
-        HogwartsStudent
+        gryffindorStudent.compare(hufflepuffStudent);
+        gryffindorStudent.compare(ravenclawStudent);
+        gryffindorStudent.compare(slytherinStudents[0]);
+
     }
 
 

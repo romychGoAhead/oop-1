@@ -1,4 +1,4 @@
-public abstract class HogwartsStudent {
+public class HogwartsStudent {
 
     private final int powerOfMagic;    // cила магии
     private final int distanceTransgression; // расстояние трансгресии
